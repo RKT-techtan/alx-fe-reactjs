@@ -1,5 +1,4 @@
 import UserContext from './UserContext';
-import React from './react';
 import UserProfile from './UserProfile';
 import Header from './Header';
 import MainContent from './MainContent';
