@@ -1,4 +1,4 @@
-function footercomponent() {
+function Footer() {
     return (
             <footer>
                <p>© 2023 City Lovers</p>
@@ -6,6 +6,4 @@ function footercomponent() {
     );
 }
 
-export default footercomponent;
-~
-
+export default Footer;
