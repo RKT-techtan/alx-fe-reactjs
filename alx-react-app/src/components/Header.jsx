@@ -6,4 +6,4 @@ function headercomponent() {
     );
 }
 
-export default headercomponent;
+export { headercomponent};
