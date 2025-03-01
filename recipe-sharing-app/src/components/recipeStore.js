@@ -5,9 +5,9 @@ const useRecipeStore = create(set => ({
 
 	addRecipe: (newRecipe) => set(state => ({ recipes: [...state.recipes, newRecipe] })),
 
-	deleteRecipe: (eraseRecipe) => set(state => ({ recipes: [...state.recipes, newRecipe] })),
+	deleteRecipe: (id) => set(state => ({ recipes: state.recipes.filter((recipe) => recipe.id !== id) })),
 
-	updateRecipe: (replaceRecipe) => set(state => ({ recipes: [...state.recipes, newRecipe] })),
+	updateRecipe: (renewRecipe) => set(state => ({ recipes: [...state.recipes, renewRecipe] })),
 
 
   setRecipes: (recipes) => set({ recipes })
