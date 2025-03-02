@@ -5,6 +5,8 @@
     const recipe = useRecipeStore(state =>
       state.recipes.find(recipe => recipe.id === recipeId)
     );
+	  const navigate = useNavigate();
+
 
     return (
       <div>
