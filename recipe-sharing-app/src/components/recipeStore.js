@@ -9,6 +9,16 @@ const useRecipeStore = create(set => ({
 
 	updateRecipe: (renewRecipe) => set(state => ({ recipes: [...state.recipes, renewRecipe] })),
 
+	//  Zustand Store for Search and Filtering //
+	 searchTerm: '',
+  setSearchTerm: (term) => set({ searchTerm: term }),
+  filteredRecipes: [],
+  filterRecipes: () => set(state => ({
+    filteredRecipes: state.recipes.filter(recipe =>
+      recipe.title.toLowerCase().includes(state.searchTerm.toLowerCase())
+    ))
+  })),
+}));
 
   setRecipes: (recipes) => set({ recipes })
 }));

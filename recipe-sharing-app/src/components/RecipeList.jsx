@@ -3,6 +3,7 @@
 
   const RecipeList = () => {
     const recipes = useRecipeStore(state => state.recipes);
+	  const filteredRecipes = useRecipeStore(state => state.recipes);
 
     return (
       <div>
@@ -12,6 +13,7 @@
             <p>{recipe.description}</p>
           </div>
         ))}
+	    <><>
       </div>
     );
   };
