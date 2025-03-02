@@ -37,7 +37,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-	  <Router><Routes><Route path='/'></Route><Routes/></Router>
+	  <Router><Routes><Route path='/' element={<Layout />}>
+	  </Route><Routes/></Router>
 	  <Link to={}></Link>
   )
 }
