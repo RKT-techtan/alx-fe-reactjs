@@ -1,6 +1,5 @@
 import React from './react'
 import { BrowserRouter as Router, Routes,Route } from './react-router-dom'
-import { BrowserRouter as Router, Routes,Route, Link } from './react-router-dom'
 import RecipeList from './RecipeList'
 import RecipeDetails from './RecipeDetails'
 import EditRecipeForm from './EditRecipeForm'
@@ -38,7 +37,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-	  <Router><Routes><Route path=''></Route><Routes/></Router>
+	  <Router><Routes><Route path='/'></Route><Routes/></Router>
 	  <Link to={}></Link>
   )
 }
