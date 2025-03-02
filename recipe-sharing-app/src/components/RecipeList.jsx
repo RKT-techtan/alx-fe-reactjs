@@ -12,10 +12,9 @@
           <div key={recipe.id}>
             <h3>{recipe.title}</h3>
             <p>{recipe.description}</p>
+		<link rel="link" href="favicon.ico" />>
           </div>
         ))}
-	    <><>
-	    <link></link>
       </div>
     );
   };
