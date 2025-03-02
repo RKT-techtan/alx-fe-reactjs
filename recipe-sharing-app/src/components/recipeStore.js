@@ -2,6 +2,7 @@ import create from 'zustand'
 
 const useRecipeStore = create(set => ({
   recipes: [],
+	favorites: [],
 
 	addRecipe: (newRecipe) => set(state => ({ recipes: [...state.recipes, newRecipe] })),
 
@@ -20,11 +21,8 @@ const useRecipeStore = create(set => ({
   })),
 }));
 
-       //  favorites array to the Zustand store to manage the user’s favorite recipes  //
-
-	recipes: [],
-  favorites: [],
-  addFavorite: (recipeId) => set(state => ({ favorites: [...state.favorites, recipeId] })),
+//  Zustand Store for Favorites and Recommendations  //
+	addFavorite: (recipeId) => set(state => ({ favorites: [...state.favorites, recipeId] })),
   removeFavorite: (recipeId) => set(state => ({
     favorites: state.favorites.filter(id => id !== recipeId)
   })),
@@ -36,27 +34,6 @@ const useRecipeStore = create(set => ({
     );
     return { recommendations: recommended };
   }),
-
-	//  Components for Favorites and Recommendations  //
-	const FavoritesList = () => {
-  const favorites = useRecipeStore(state => state.favorites.map(id =>
-    state.recipes.find(recipe => recipe.id === id)
-  ));
-
-  return (
-    <div>
-      <h2>My Favorites</h2>
-      {favorites.map(recipe => (
-        <div key={recipe.id}>
-          <h3>{recipe.title}</h3>
-          <p>{recipe.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-// Favorites and Recommendations into the UI //
 
   setRecipes: (recipes) => set({ recipes })
 }));
