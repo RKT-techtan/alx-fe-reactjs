@@ -30,6 +30,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+	  <Route path="/Profile" component={Dashboard} />
+	  <Route path="/blog/:id" component={User} />
   )
 }
 

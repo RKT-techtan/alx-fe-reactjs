@@ -15,5 +15,7 @@ const Profile = () => {
                     <Link to={`${url}/settings`}>ProfileSettings</Link>
                 </li>
             </ul>
+		<PrivateRoute path="/profile" component={profile} />
+	);
 
 export default Profile;
