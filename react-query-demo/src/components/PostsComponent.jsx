@@ -3,12 +3,12 @@ import { useQuery } from 'react-query';
 
 const fetchData = async () => {
     const res = await fetch(' https://jsonplaceholder.typicode.com/posts');
-    return res.json();
+    eturn res.json();
 };
 
 
 const PostsComponent = () => {
-    const { data, error, isLoading, isError } = useQuery('fetchData', fetchData);
+    const { data, error, isLoading, isError } = useQuery('fetchData', fetchData, fetchposts);
 
 
 
