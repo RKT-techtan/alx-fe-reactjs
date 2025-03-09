@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const RegistrationForm = () => {
-    const [formData, setFormData] = useState({ username: '', password: '', email: '' });
+    const [formData, setFormData, setErrors] = useState({ username: '', password: '', email: '' });
 
 
     const handleChange = (e) => {
@@ -14,6 +14,9 @@ const RegistrationForm = () => {
         e.preventDefault();
         console.log(formData);
     };
+	if (!username) return <div>Loading...</div>;
+	if (!email) return <div>Loading...</div>;
+	if (!password) return <div>Loading...</div>;
 
 
     return (
