@@ -1,7 +1,11 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-const const FormikForm = () => (
+const FormikForm = () => (
+	name:
+	Yup.string().required('Name is required'),
+	email:
+	Yup.string().required('Name is required'),
     <Formik
         initialValues={{ name: '', email: '' }}
         validationSchema={validationSchema}
