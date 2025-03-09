@@ -32,6 +32,7 @@ function App() {
     </>
 	  <Route path="/Profile" component={Dashboard} />
 	  <Route path="/blog/:id" component={User} />
+	  <PrivateRoute path="/profile" component={Dashboard} />
   )
 }
 
