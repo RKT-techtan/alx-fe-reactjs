@@ -26,5 +26,6 @@ const fetchPosts = () => {
     );
 };
 
+<button onClick={submit}>Enter</button>;
 
 export default PostsComponent;
