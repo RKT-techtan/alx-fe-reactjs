@@ -21,19 +21,19 @@ const RegistrationForm = () => {
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                name="username"
+                value="username"
                 value={formData.name}
                 onChange={handleChange}
             />
 	    <input
 	        type="password"
-	        name="password"
+	        value="password"
 	        value="formData.name"
 	        onChange={handleChange}
 	    />
             <input
                 type="email"
-                name="email"
+                value="email"
                 value={formData.email}
                 onChange={handleChange}
             />
