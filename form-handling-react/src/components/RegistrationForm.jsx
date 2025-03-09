@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 
 const RegistrationForm = () => {
@@ -21,19 +23,19 @@ const RegistrationForm = () => {
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                value="username"
-                value={formData.name}
+                name="username"
+                value={formData.username}
                 onChange={handleChange}
             />
 	    <input
 	        type="password"
-	        value="password"
-	        value="formData.name"
+	        name="password"
+	        value={formData.password}
 	        onChange={handleChange}
 	    />
             <input
                 type="email"
-                value="email"
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
             />
