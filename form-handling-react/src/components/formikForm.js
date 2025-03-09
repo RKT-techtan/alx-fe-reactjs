@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-const FormikForm = () => (
+const FormikForm = Yup.object() => (
 	name:
 	Yup.string().required('Name is required'),
 	email:
