@@ -1,3 +1,4 @@
+import { ProtectedRoute } from './ProtectedRoute'
 import { BrowserRouter as Router, Route, Routes, Switch, BlogPost, Link, useRouteMatch } from 'react-router-dom';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
