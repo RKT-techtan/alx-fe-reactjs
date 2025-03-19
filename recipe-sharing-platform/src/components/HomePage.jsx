@@ -7,8 +7,9 @@ function HomePage() {
 	}, []);
 
 	return (
-		<div className="Homepage lg:W-2/3 sm:W-1/4 hover:bg-green-300 ">
-		<img src="Image" alt="user" />
+		{HomePage.map((Homepage)=>);
+		<div className="Homepage lg:W-2/3 sm:W-1/4 hover:bg-green-300">
+		<img src="Image lg:w-2/3" alt="user hover:bg-green-300" />
 		<h1>Home Page</h1>
 		</div>
 	);
