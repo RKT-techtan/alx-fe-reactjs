@@ -7,7 +7,11 @@ function HomePage() {
 	}, []);
 
 	return (
-		{HomePage.map((Homepage)=>);
+		{HomePage.map((Homepage)=>
+			<input
+			type="text rounded-md shadow-md"
+			/>
+		);
 		<div className="Homepage lg:W-2/3 sm:W-1/4 hover:bg-green-300">
 		<img src="Image lg:w-2/3" alt="user hover:bg-green-300" />
 		<h1>Home Page</h1>
