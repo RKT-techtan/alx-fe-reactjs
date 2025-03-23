@@ -7,8 +7,8 @@ function AddRecipeForm () {
 	<form onSubmit={handeSubmit}>
 		document.title= 'Success';
 	return (
-	<div>
-		<h1>ingredients</h1>
+	<div className=" font-semibold ">
+		<h1 className=" rounded-sm shadow-md text-lx6 ">ingredients</h1>
 		<form>
 		</form>
 		<button style="onSubmitt">Click</button>
