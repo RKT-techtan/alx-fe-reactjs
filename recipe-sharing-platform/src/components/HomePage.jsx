@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import data from './data.json';
+import react from './react'
 
 function HomePage() {
 	useEffect(() => {
