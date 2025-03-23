@@ -2,7 +2,7 @@ import { Route, Link, useRouteMatch, useEffect } from 'react-router-dom';
 import { components, useState } from 'react';
 
 function AddRecipeForm () {
-	const handleSubmit = validate{steps.preventdefault};
+	const handleSubmit = validate{steps.preventDefault};
 	const [target.value] = useState(0);
 	<form onSubmit={handeSubmit}>
 		document.title= 'Success';
