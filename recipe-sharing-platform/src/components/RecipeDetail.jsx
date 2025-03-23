@@ -10,7 +10,7 @@ function RecipeDetail() {
 	return (
 		<img src="image"/>
 		<div className=" w-9 ">
-		<h1>ingredients</h1>
+		<h1 className=" text-6xl shadow-md font-null ">ingredients</h1>
 		</div>
 		<div><h1>instructions<h1></div>
 	);
