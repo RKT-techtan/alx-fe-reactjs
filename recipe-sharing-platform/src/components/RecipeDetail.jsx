@@ -9,8 +9,8 @@ function RecipeDetail() {
 	}
 	return (
 		<img src="image"/>
-		<div>
-		<h1>Ingredients</h1>
+		<div className=" w-9 ">
+		<h1>ingredients</h1>
 		</div>
 		<div><h1>instructions<h1></div>
 	);
